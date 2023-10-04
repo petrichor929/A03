@@ -1,16 +1,14 @@
 # A02
 <!DOCTYPE html>
 <html>
-  <head> 
-    <title>How to use Git, WebStorm, and Github.</title>
-  </head>
   <body>
-    <h1>How to download Git</h1>
+    <h1>How to use Git, WebStorm, and Github</h1>
+    <h2>How to download Git</h2>
     <ol>
       <li>To download Git you have to download the most recent Git from <a href="https://git-scm.com/downloads"></a>GIT</li>
       <li>Once you click on the link you can follow the instructions they have set up.</li>
     </ol>
-    <h2>How to use Github</h2>
+    <h3>How to use Github</h3>
     <ol>
       <li>First create a GitHub account from <a href="https://github.com/join"></a>GitHub</li>
       <li>To create your first repository you need to click on the plus button that is by your profile picture.</li>
@@ -19,19 +17,19 @@
       <li>To have Readme.file connected to your repository file you click on "Initialize this repository with a README".</li>
       <li>Lastly, click on "Click repository"</li>
     </ol>
-    <h3>How to use WebStorm</h3>
+    <h4>How to use WebStorm</h4>
     <ol>
       <li>To download WebStorm you have to click on the link <a href="https://www.jetbrains.com/student"></a>WebStorm</li>
       <li>Once you click on the link you can follow the instructions that they have set up.</li>
     </ol>
-    <h4>How to connect WebStorm, Github, and Git together</h4>
+    <h5>How to connect WebStorm, Github, and Git together</h5>
     <ol>
       <li>To connect Github with Webstorm you need to go to your WebStorm account and press Ctrl+Alt+S following by selecting version control Git and enter the path to the git.exe.</li>
       <li>Next to create a repository from WebStorm you can select VCS and Import it into version control.</li>
       <li>To import a repository from GitHub to WebStrom you can click on the main page choose checkout from version control and follow by entering the GitHub repository name and the local path name.</li>
       <li>To add files to Git you just go to your Git account click on Add and choose your files followed by clicking on Add.</li>
     </ol>
-    <h5>Glossary</h5>
+    <h6>Glossary</h6>
     <p><b>Branch: </b>the ability to develop features, fix bugs, or safely experiment with new ideas in a contained area of your repository.</p>
     <p><b>Clone: </b>is a copy of the repository from GitHub to your local machine.</p>
     <p><b>Commit: </b>records changes to one or more files in your branch.</p>
@@ -45,7 +43,7 @@
     <p><b>Remote: </b>is a repository that is hosted on a server that is accessible to all team members.</p>
     <p><b>Repository: </b>contains all of your project files and each file's revision history.</p>
   </body>
-  <h6>References</h6>
+  <h7>References</h7>
   <p><a href="https://docs.github.com/en/get-started/quickstart/create-a-repo">Create new repository</p>
   <p><a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge#:~:text=Git%20merge%20will%20combine%20multiple,used%20to%20combine%20two%20branches.">Merge</p>
   <p><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/about-merge-conflicts">Merge conflict</p>
