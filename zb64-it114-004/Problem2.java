@@ -21,6 +21,7 @@ public class Problem2 {
         //TODO add/edit code here
         for (double i:arr ) {
                 total+=i;
+                //or total = total + i;
         }
         //set the double to a string variable
         //TODO ensure rounding is to two decimal places (i.e., 0.10, 0.01, 1.00)
@@ -31,5 +32,4 @@ public class Problem2 {
         System.out.println("Total is " + totalOutput);
         System.out.println("End process\n");
     }
-    
 }

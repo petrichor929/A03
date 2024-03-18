@@ -3,12 +3,10 @@ import java.util.Arrays;
 public class Problem3 {
     public static void main(String[] args) {
         //Don't edit anything here
-        Integer[] a1 = new Integer[]{-1, -2, -3, -4, -5, -6, -7, -8, -9, 
--10};
+        Integer[] a1 = new Integer[]{-1, -2, -3, -4, -5, -6, -7, -8, -9, -10};
         Integer[] a2 = new Integer[]{-1, 1, -2, 2, 3, -3, -4, 5};
         Double[] a3 = new Double[]{-0.01, -0.0001, -.15};
-        String[] a4 = new String[]{"-1", "2", "-3", "4", "-5", "5", "-6", 
-"6", "-7", "7"};
+        String[] a4 = new String[]{"-1", "2", "-3", "4", "-5", "5", "-6", "6", "-7", "7"};
         
         bePositive(a1);
         bePositive(a2);
@@ -30,6 +28,16 @@ public class Problem3 {
             } else if (arr[i] instanceof String) {
                 output[i]=Math.abs(Integer.parseInt((String) arr[i]));
             }
+            //or T v = arr[i];
+            //if (v instanceof String) {
+                //String s = (String) v;
+                //s = s.replace("-",""); or int x = Integer.parseInt(s);
+                //output[i] = Math.abs(x)+"";
+            //}
+            //else if(v instaceof Double) {
+                //output[i] = Math.abs((Double) v);
+            //}
+            //else if (v instaceog Integer)
         }
 
         //set the result to the proper index of the output array

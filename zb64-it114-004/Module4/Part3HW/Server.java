@@ -76,7 +76,7 @@ public class Server {
             if (results == 0) {
                 message = "User[" + clientId + "] flipped a coin and got heads.";
             } else {
-                message = clientId + " flipped a coin and got tails.";
+                message = "User[" + clientId + " flipped a coin and got tails.";
             }
             String finalMessage = String.format("User[%d]: %s", clientId, message);;
             Iterator<ServerThread> it = clients.iterator();

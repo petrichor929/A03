@@ -110,16 +110,32 @@ public class NumberGuesser4 {
             processed = true;
         }
         // TODO add other conditions here
+        if (message.equalsIgnoreCase("hint")) {
+            if (strikes < 2) {
+                System.out.println("Can't get a hint yet, try at least 2 times");
+                return false;
+            }
+            hintUsed = true;
+            int min = number - random.nextInt(4);
+            int max = number + random.nextInt(4);
+            if (min < 1) {
+                min =1 ;
+            }
+            int range = 10 + ((level -1) * 5);
+            if (max > range) {
+                min = range;
+            }
+        }
         return processed;
     }
 
-    private void genHints(int range) {
-        int startRange = Math.max(1, number - range/2); //this calculates the minimum range
-        int endRange = Math.min(10, number + range/2); //this caluclates the maximum range
-        System.out.println("Hint is that the number is between " + startRange + "-" + endRange);
-        hintUsed = true;
+    //private void genHints(int range) {
+        //nt startRange = Math.max(1, number - range/2); //this calculates the minimum range
+        //int endRange = Math.min(10, number + range/2); //this caluclates the maximum range
+        //System.out.println("Hint is that the number is between " + startRange + "-" + endRange);
+        //hintUsed = true;
         //zb64 2/12/24
-    }
+    //
 
     private void lose() {
         System.out.println("Uh oh, looks like you need to get some more practice.");
@@ -142,7 +158,7 @@ public class NumberGuesser4 {
         } else {
             System.out.println("That's wrong");
             strikes++;
-            if (strikes >= maxStrikes) {
+            if (strikes >= maxStrikes) { //this is how we know we are
                 lose();
                 pickNewRandom = true;
             } else {
@@ -153,9 +169,9 @@ public class NumberGuesser4 {
                     System.out.println("You are warm! Keep going.");
                 } else if (diff <= 10) {
                  System.out.println("You are cold.");
-                }  
+                }
                 //zb64 2/12/24
-            }      
+            }
         }
         saveState();
     }
@@ -199,10 +215,10 @@ public class NumberGuesser4 {
                 processGuess(guess);
                 // the following line is the same as the above two lines
                 // processGuess(getGuess(message));
-                if (message.equalsIgnoreCase("hint") && !hintUsed && strikes >=2) {
-                    genHints(range);
-                    continue;
-                }
+                //if (message.equalsIgnoreCase("hint") && !hintUsed && strikes >=2) {
+                    //genHints(range);
+                    //continue;
+                //}
                 //zb64 2/12/24
             } while (true);
         } catch (Exception e) {
